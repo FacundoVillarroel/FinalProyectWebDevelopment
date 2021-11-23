@@ -1,0 +1,190 @@
+  /* VISTA TABLET */
+
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 1.6rem;
+  }
+
+  header {
+    justify-content: center;
+    font-size: 1.6rem;
+    .logo {
+      width: 11rem;
+      transition: width 0.5s;
+  
+      &:hover {
+        width: 12rem;
+      }
+    }
+  } 
+
+  /* MENU TABLET */
+
+  .menu {
+    padding: 0.5rem 0rem;
+    a{
+      font-size: 1.8rem;
+      margin-right: 1.2rem;
+      &:hover {
+        background-color: $colorRojo;
+        border-radius: 10%;
+      }
+    }
+  }
+
+  /* SECCIÓN INDEX TABLET */
+
+  .gridPadreIndex {
+    grid-template-columns: 3fr 2fr 2fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "reciente reciente recienteTexto" "posiciones proximoPartido proximoPartido" "posiciones maps maps";
+    grid-column-gap: 1rem;
+    font-size: 1.6rem;
+    justify-content: center;
+  }
+
+  .reciente {
+    grid-area: reciente;
+  }
+
+  .recienteTexto {
+    grid-area: recienteTexto;
+    align-self: center;
+    text-align: left;
+  }
+
+  .posiciones {
+    grid-area: posiciones;
+  }
+
+  .proximoPartido {
+    grid-area: proximoPartido;
+    margin-top: 5rem;
+  }
+
+  .maps {
+    grid-area: maps;
+  }
+
+  /* SECCIÓN FIXTURE TABLET */
+
+  .fixtureFecha {
+    column-gap: 5rem;
+    transition: transform 0.5s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  /* SECCIÓN GOLES TABLET */
+
+  .gridPadreGoles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: repeat(4, auto);
+    grid-template-areas: "goleadores primerGol" "maximasGoleadas penales" "dobletes hattricks" "poker poker";
+    padding: 2rem 1rem;
+    justify-content: space-evenly;
+    justify-items: center;
+    text-align: center;
+    row-gap: 2rem;
+    column-gap: 1rem;
+    .goleadores {
+      grid-area: goleadores;
+    }
+    .primerGol {
+      grid-area: primerGol;
+    }
+    .maximasGoleadas {
+      grid-area: maximasGoleadas;
+    }
+    .penales {
+      grid-area: penales;
+    }
+    .dobletes {
+      grid-area: dobletes;
+    }
+    .hattricks {
+      grid-area: hattricks;
+    }
+    .poker {
+      grid-area: poker;
+    }
+  }
+
+  /* SECCIÓN JUGADORES TABLET */
+  
+  @for $i from 1 through 25{
+    .jugadorImagen#{$i}{
+      &:hover{
+        transform: scale(2,2);
+        cursor: pointer;
+      }
+    }
+  }
+
+  /* SECCIÓN NOSOTROS TABLET */
+
+  .gridPadreNosotros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "familia familia" "informacion informacion" "fotos fotos" "formulario formulario";
+    column-gap: 2rem;
+    row-gap: 3rem;
+    justify-items: center;
+    margin: 2rem;
+    .familia {
+      grid-area: familia;
+    }
+    .informacion {
+      grid-area: informacion;
+    }
+    .fotos {
+      grid-area: fotos;
+    }
+    .gridGaleria {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, auto);
+      column-gap: 1rem;
+      row-gap: 1rem;
+      .animacionGaleria {
+        transition: transform 0.5s;
+    
+        &:hover {
+          transform: scale(1.1);
+          cursor:pointer;
+        }
+      }
+    }
+    .formulario {
+      grid-area: formulario;
+    }
+  }
+  
+  /* FOOTER TABLET */
+
+  .contenedorFooter{
+    .imgFooterCampa {
+      width: 9rem;
+      height: 9.3rem;
+      background-image: url(../images/campa.png);
+      &:hover{
+        background-image: url(../images/campaNegro.png);
+      }
+    }
+    .imgFooterKappa{
+      width: 10rem;
+      height: 5.5rem;
+      background-image: url(../images/kappa.png);
+      &:hover{
+        background-image: url(../images/kappaNegro.png);
+      }
+    }
+    .iconos {
+      font-size: 5rem;
+    }
+  }
+}
