@@ -165,8 +165,7 @@ header {
 
 /* SECCIÓN FIXTURE */
 .fixture {
-  width: 90%;
-  margin-left: 5%;
+  width: 100%;
   display: grid;
   grid-template-columns: 0.6fr;
   grid-template-rows: repeat(11, 1fr);
@@ -185,7 +184,8 @@ header {
     border: #ffffff dotted 0.1rem;
     padding: 0.5rem;
     margin-bottom: 2rem;
-    background-image: radial-gradient(#2eb872, #212121); }
+    background-image: radial-gradient(#2eb872, #212121);
+    width: 90vw; }
     .fixture .fixtureFecha .fecha {
       grid-area: fecha; }
     .fixture .fixtureFecha .gifLocal {
@@ -206,8 +206,8 @@ header {
 .gridPadreGoles {
   display: grid;
   grid-template-columns: 1fr;
-  grid-row: repeat(7, auto);
-  grid-template-areas: "goleadores" "maximasGoleadas" "primerGol" "penales" "dobletes" "hattricks" "poker";
+  grid-row: repeat(6, auto);
+  grid-template-areas: "goleadores" "maximasGoleadas" "penales" "dobletes" "hattricks" "poker";
   padding: 2rem 1rem;
   justify-content: space-evenly;
   justify-items: center;
@@ -215,8 +215,6 @@ header {
   row-gap: 2rem; }
   .gridPadreGoles .goleadores {
     grid-area: goleadores; }
-  .gridPadreGoles .primerGol {
-    grid-area: primerGol; }
   .gridPadreGoles .maximasGoleadas {
     grid-area: maximasGoleadas; }
     .gridPadreGoles .maximasGoleadas .aFavor {
@@ -630,6 +628,14 @@ header {
       resize: none;
       display: block; }
 
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  color: black;
+  background-color: white;
+  border-radius: 50%; }
+
+.flechaCarousel {
+  font-size: 1.5rem; }
+
 /* VISTA TABLET */
 @media only screen and (min-width: 768px) {
   body {
@@ -649,8 +655,7 @@ header {
       font-size: 1.8rem;
       margin-right: 1.2rem; }
       .menu a:hover {
-        background-color: #fa4659;
-        border-radius: 10%; }
+        background-color: #fa4659; }
   /* SECCIÓN INDEX TABLET */
   .gridPadreIndex {
     grid-template-columns: 3fr 2fr 2fr;
@@ -658,7 +663,8 @@ header {
     grid-template-areas: "reciente reciente recienteTexto" "posiciones proximoPartido proximoPartido" "posiciones maps maps";
     grid-column-gap: 1rem;
     font-size: 1.6rem;
-    justify-content: center; }
+    justify-content: center;
+    margin: 3rem; }
   .reciente {
     grid-area: reciente; }
   .recienteTexto {
@@ -683,7 +689,7 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-row: repeat(4, auto);
-    grid-template-areas: "goleadores primerGol" "maximasGoleadas penales" "dobletes hattricks" "poker poker";
+    grid-template-areas: "goleadores goleadores" "maximasGoleadas penales" "dobletes hattricks" "poker poker";
     padding: 2rem 1rem;
     justify-content: space-evenly;
     justify-items: center;
@@ -692,8 +698,6 @@ header {
     column-gap: 1rem; }
     .gridPadreGoles .goleadores {
       grid-area: goleadores; }
-    .gridPadreGoles .primerGol {
-      grid-area: primerGol; }
     .gridPadreGoles .maximasGoleadas {
       grid-area: maximasGoleadas; }
     .gridPadreGoles .penales {
@@ -849,15 +853,19 @@ header {
     grid-column-gap: 1rem;
     font-size: 1.6rem;
     justify-content: space-evenly;
-    align-content: space-between; }
+    align-content: space-between;
+    margin: 3rem 11rem; }
     .gridPadreIndex .proximoPartido {
       margin-top: 0rem; }
+  /* SECCION FIXTURE */
+  .fixtureFecha {
+    max-width: 70vw; }
   /* SECCIÓN GOLES PC */
   .gridPadreGoles {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: 1.25fr 1fr 1fr;
     grid-row: repeat(2, auto);
-    grid-template-areas: "goleadores goleadores goleadores primerGol primerGol primerGol maximasGoleadas maximasGoleadas" "penales penales dobletes dobletes hattricks hattricks poker poker";
+    grid-template-areas: "goleadores maximasGoleadas penales" "dobletes hattricks poker";
     padding: 2rem 1rem;
     justify-content: space-evenly;
     column-gap: 2rem;

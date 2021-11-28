@@ -38,18 +38,25 @@ header{
     font-size: 1.6rem;
     justify-content: space-evenly;
     align-content: space-between;
+    margin: 3rem 11rem;
     .proximoPartido{
       margin-top: 0rem;
     }
   }
 
+  /* SECCION FIXTURE */
+
+    .fixtureFecha{
+      max-width: 70vw;
+    }
+
   /* SECCIÓN GOLES PC */
 
   .gridPadreGoles {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: 1.25fr 1fr 1fr;
     grid-row: repeat(2, auto);
-    grid-template-areas: "goleadores goleadores goleadores primerGol primerGol primerGol maximasGoleadas maximasGoleadas" "penales penales dobletes dobletes hattricks hattricks poker poker";
+    grid-template-areas: "goleadores maximasGoleadas penales" "dobletes hattricks poker";
     padding: 2rem 1rem;
     justify-content: space-evenly;
     column-gap: 2rem;
