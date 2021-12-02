@@ -667,6 +667,7 @@ header {
   .reciente {
     grid-area: reciente; }
   .recienteTexto {
+    margin-left: 1rem;
     grid-area: recienteTexto;
     align-self: center;
     text-align: left; }
