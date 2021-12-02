@@ -613,9 +613,8 @@ header {
       background-color: #ffffff; }
       .gridPadreNosotros form .enviar:hover {
         cursor: pointer;
-        background-color: #c8c8c8;
-        border-color: #c8c8c8;
-        border: inset; }
+        background-color: #FEFFE4;
+        border-color: #FEFFE4; }
     .gridPadreNosotros form .cursor:hover {
       cursor: pointer; }
     .gridPadreNosotros form textarea {
@@ -655,7 +654,7 @@ header {
       font-size: 1.8rem;
       margin-right: 1.2rem; }
       .menu a:hover {
-        background-color: #fa4659; }
+        text-shadow: 1px 1px #fa4659, 1px 1px #fa4659, 1px 1px #fa4659, 1px 1px #fa4659; }
   /* SECCIÓN INDEX TABLET */
   .gridPadreIndex {
     grid-template-columns: 3fr 2fr 2fr;

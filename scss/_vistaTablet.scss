@@ -26,7 +26,7 @@
       font-size: 1.8rem;
       margin-right: 1.2rem;
       &:hover {
-        background-color: $colorRojo;
+        text-shadow: 1px 1px $colorRojo, 1px 1px $colorRojo, 1px 1px $colorRojo, 1px 1px $colorRojo;
       }
     }
   }
