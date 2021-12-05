@@ -82,6 +82,9 @@ header {
     text-decoration: none;
     padding: 0.3rem; }
 
+.navbar-nav {
+  align-items: flex-end; }
+
 /* CLASES PARA EL FOOTER */
 .contenedorFooter {
   margin-top: 3rem;
