@@ -651,10 +651,21 @@ header {
   .menu {
     padding: 0.5rem 0rem; }
     .menu a {
+      position: relative;
       font-size: 1.8rem;
-      margin-right: 1.2rem; }
-      .menu a:hover {
-        text-shadow: 1px 1px #fa4659, 1px 1px #fa4659, 1px 1px #fa4659, 1px 1px #fa4659; }
+      margin-right: 1.2rem;
+      padding: 0 6px; }
+      .menu a:after {
+        content: "";
+        position: absolute;
+        background-color: #ffffff;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -4px;
+        transition: 0.3s; }
+  a:hover:after {
+    width: 100%; }
   /* SECCIÓN INDEX TABLET */
   .gridPadreIndex {
     grid-template-columns: 3fr 2fr 2fr;

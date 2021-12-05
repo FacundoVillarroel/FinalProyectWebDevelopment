@@ -23,12 +23,24 @@
   .menu {
     padding: 0.5rem 0rem;
     a{
+      position: relative;
       font-size: 1.8rem;
       margin-right: 1.2rem;
-      &:hover {
-        text-shadow: 1px 1px $colorRojo, 1px 1px $colorRojo, 1px 1px $colorRojo, 1px 1px $colorRojo;
+      padding: 0 6px;
+      &:after{
+        content: "";
+        position: absolute;
+        background-color: $colorBlanco;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -4px;
+        transition: 0.3s;
       }
     }
+  }
+  a:hover:after{
+    width: 100%;
   }
 
   /* SECCIÓN INDEX TABLET */
