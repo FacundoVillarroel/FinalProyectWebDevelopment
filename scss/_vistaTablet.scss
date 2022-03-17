@@ -173,23 +173,7 @@
       grid-area: formulario;
     }
   }
-  /* TIENDA TABLET */
-  .gridPadreTienda{
-    .gridGaleria {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(6, auto);
-      column-gap: 1rem;
-      row-gap: 1rem;
-      .imgProducto{
-        height: 15rem;
-      }
-      .productoBoton{
-        font-size: 1.2rem;
-      }
-    }
-  }
-
+  
   /* FOOTER TABLET */
 
   .contenedorFooter{
