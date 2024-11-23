@@ -11,7 +11,6 @@ El proyecto está inspirado en un equipo de fútbol amateur en el que solía jug
 ## Links a la web
 
 link en GitHub: https://facundovillarroel.github.io/FinalProyectWebDevelopment/
-link en WebHost: https://recreativofc.000webhostapp.com/
 
 **¡Muchas gracias por su interés en este proyecto, animate a dejar un mensaje!**
 
