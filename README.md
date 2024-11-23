@@ -29,6 +29,5 @@ The project is inspired by an amateur soccer team where I used to play with my f
 ## Links to the website
 
 link in GitHub: https://facundovillarroel.github.io/FinalProyectWebDevelopment/
-link in WebHost: https://recreativofc.000webhostapp.com/
 
 **Thank you very much for your interest in this project, feel free to leave a message**
